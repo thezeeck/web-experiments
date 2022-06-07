@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Cutive Mono', monospace;
+}
+
+main {
+  padding: 1rem;
+  margin: 0 auto;
+  width: clamp(800px, 100%, 1000px);
+  text-align: center;
+}
+
+canvas {
+  margin: 1rem auto;
+}
+
+form {
+  text-align: left;
+}
+
+fieldset {
+  border: 2px #e1e1e1 dashed;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+fieldset ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+fieldset li {
+  width: calc(25% - 3rem / 4);
+}
+
+fieldset li:last-child {
+  flex: 1;
+  text-align: right;
+}
+
+fieldset li p {
+  margin: .5rem 0 0;
+}
+
+fieldset input[type=number] {
+  width: clamp(50px, 100%, 200px);
+  font-family: 'Cutive Mono', monospace;
+}
+
+dialog {
+  border: 0 none;
+  border-radius: 1rem;
+  padding: 4rem;
+  box-shadow: 0 0 2rem rgba(0,0,0,.25);
+}
+
+dialog h1 {
+  font-size: 3rem;
+  margin: 0;
+}

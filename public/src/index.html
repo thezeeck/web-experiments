@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Conway - Game of life</title>
+  <link rel="stylesheet" type="text/css" href="app.css" media="screen" />
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <main>
+    <form id="generateTree">
+      <fieldset>
+        <ul>
+          <li>
+            <label for="trunk">Trunk size:</label><br />
+            <input type="number" max="200" min="0" id="trunk" name="trunk" value="100" step="25"/>
+          </li>
+          <li>
+            <label for="realism">Realism</label><br />
+            <input type="number" max="7" min="1" id="realism" name="realism" value="3" />
+            <p>A number greater than 4 could crash the browser</p>
+          </li>
+          <li>
+            <label for="angle">Initial angle:</label><br />
+            <input type="number" max="5" min="-5" id="angle" name="angle" value="0" />
+          </li>
+          <li>
+            <label for="position">Position:</label><br />
+            <input type="number" max="800" min="0" id="position" name="position" value="400" step="50" />
+          </li>
+          <li>
+            <label for="trunkColor">Trunk color:</label><br />
+            <input type="color" id="trunkColor" name="trunkColor" value="#5A3F37" />
+          </li>
+          <li>
+            <label for="leafColor">Leaf color:</label><br />
+            <input type="color" id="leafColor" name="leafColor" value="#04DC6A" />
+          </li>
+          <li>
+            <button type="reset">Reset canvas and form</button>
+            <button type="submit">Generate tree</button>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+    <canvas width="800" height="800" id="canvas"></canvas>
+  </main>
+  <dialog id="loadingDialog">
+    <section>
+      <h1>Please wait...</h1>
+    </section>
+  </dialog>
+</body>
+</html>
